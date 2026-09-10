@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquin Eivan Martelino | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR WITH SKILLS LINK -->
+    <nav class="navbar">
+        <a href="#overview" class="logo">&lt;Eivan /&gt;</a>
+        
+        <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <img id="theme-icon" src="assets/Icons/sun.svg" alt="Toggle theme" class="svg-icon">
+            </button>
+            <a href="#projects" class="btn btn-primary nav-btn">View Projects</a>
+        </div>
+    </nav>
+
+<!-- 1. OVERVIEW HERO SECTION (Two-Column with Portrait) -->
+    <section id="overview" class="overview-section">
+        <div class="overview-grid">
+            
+            <!-- LEFT COLUMN: Intro Details -->
+            <div class="hero-text-col">
+                <div class="badge">Open to Job Opportunities</div>
+                
+                <h1 class="hero-title">
+                    Architecting <span class="highlight-blue">Scalable Web Apps</span> & <span class="highlight-purple">Smart Solutions</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Computer Science graduate with hands-on experience in full-stack web development, REST APIs, and database systems. Eager to apply a strong problem-solving mindset to entry-level roles in computer hardware maintenance, IT technical support, or software development..
+                </p>
+
+                <!-- Skill Tech Pills -->
+                <div class="tech-pills">
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Firebase</span>
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>REST APIs</span>
+                    <span>Git</span>
+                </div>
+
+                <div class="overview-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#about" class="btn btn-outline">About Me</a>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Portrait Card (Matching Dennies' style) -->
+            <div class="hero-photo-col">
+                <div class="hero-photo-wrapper">
+                    <img src="assets/Images/Grad_Pic.jpg" alt="Joaquin Eivan N. Martelino" class="hero-photo">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Infinite Ticker Track remains below the grid -->
+        <div class="ticker-wrapper">
+            <div class="ticker-track">
+                <!-- FIRST SET OF CARDS -->
+                <div class="f-card">
+                    <div class="f-icon icon-blue"></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web applications built with Python (Flask), JavaScript, Firebase Firestore, and responsive frontends.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-purple"></div>
+                    <h3>Machine Learning</h3>
+                    <p>Recommender systems and prediction engines built in Python using Random Forest algorithms to solve real workflows.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-green"></div>
+                    <h3>Cloud & Databases</h3>
+                    <p>Firebase Firestore real-time sync, MySQL schema design, secure API authentication, and environment key management.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-gold"></div>
+                    <h3>System Support & Testing</h3>
+                    <p>Hardware configuration, system deployment, and structured database record verification based on clean software practices.</p>
+                </div>
+
+                <!-- DUPLICATED SET FOR LOOPING -->
+                <div class="f-card">
+                    <div class="f-icon icon-blue"></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web applications built with Python (Flask), JavaScript, Firebase Firestore, and responsive frontends.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-purple"></div>
+                    <h3>Machine Learning</h3>
+                    <p>Recommender systems and prediction engines built in Python using Random Forest algorithms to solve real workflows.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-green"></div>
+                    <h3>Cloud & Databases</h3>
+                    <p>Firebase Firestore real-time sync, MySQL schema design, secure API authentication, and environment key management.</p>
+                </div>
+                <div class="f-card">
+                    <div class="f-icon icon-gold"></div>
+                    <h3>System Support & Testing</h3>
+                    <p>Hardware configuration, system deployment, and structured database record verification based on clean software practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+        <div class="hero-card">
+            <div class="card-glow-line"></div>
+            <div class="hero-body">
+                <p class="hero-intro">
+                    I'm <span class="highlight-blue">Joaquin Eivan N. Martelino</span>, a Computer Science graduate focused on practical problem-solving, full-stack web applications, and system support.
+                </p>
+                <p class="hero-description">
+                   Eager to apply a strong problem-solving mindset, full-stack web foundations, and workstation hardware support skills to an adaptable, technology-driven team.
+                </p>
+            </div>
+
+            <hr class="divider">
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <img src="assets/Icons/map-pin.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div>
+                        <span class="info-label">LOCATION</span>
+                        <p class="info-val">Imus, Cavite, Philippines</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="assets/Icons/mail.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div>
+                        <span class="info-label">EMAIL</span>
+                        <p class="info-val">Eivanmartelino@yahoo.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="assets/Icons/phone.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div>
+                        <span class="info-label">PHONE</span>
+                        <p class="info-val">+63 0961 880 7939</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="assets/Icons/graduation-cap.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div>
+                        <span class="info-label">DEGREE</span>
+                        <p class="info-val">B.S. Computer Science</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="hero-actions">
+                <a href="https://github.com/Wanju17" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <img src="assets/Icons/Cat.svg" alt="" aria-hidden="true" class="svg-icon"> GitHub
+                </a>
+                
+                <a href="assets/Joaquin_Resume.docx" download="Joaquin_Resume.docx" class="social-btn" aria-label="Download Joaquin Eivan Martelino's Resume">
+                    <img src="assets/Icons/fileIcon.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <span>Download Resume</span>
+                </a>
+                
+                
+                <button id="open-dm-btn" class="social-btn">
+                    <img src="assets/Icons/mail.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <span>Send DM</span>
+                </button>
+
+                <!-- Circular LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/joaquin-eivan-n-martelino-47653a376" target="_blank" rel="noopener noreferrer" class="circle-btn" aria-label="LinkedIn Profile">
+                    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+
+                <!-- Circular JobStreet Button -->
+                <a href="https://ph.jobstreet.com/profiles/joaquineivan-martelino-hpxwkwvjxp" target="_blank" rel="noopener noreferrer" class="circle-btn" aria-label="JobStreet Profile">
+                    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- 2. ACADEMIC BACKGROUND SECTION -->
+    <section id="education" class="container">
+        <h2 class="section-title">Academic Background</h2>
+        <div class="timeline">
+            <div class="timeline-card">
+                <span class="timeline-date">College</span>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="timeline-org">Philippine Christian University</p>
+                <p class="timeline-desc">
+                    <img src="assets/Icons/medal.svg" alt="" aria-hidden="true" class="svg-icon"> 
+                    Dean's Lister (1st Year, 1st Semester)
+                </p>
+            </div>
+            <div class="timeline-card">
+                <span class="timeline-date">Senior High School</span>
+                <h3>Senior High School Diploma</h3>
+                <p class="timeline-org">Philippine Christian University</p>
+                <p class="timeline-desc">
+                    <img src="assets/Icons/medal.svg" alt="" aria-hidden="true" class="svg-icon"> 
+                    Graduated with Honors
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. INTERNSHIP EXPERIENCE -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-card">
+                <span class="timeline-date">On-the-Job Training</span>
+                <h3>Intern / Technical Support Assistant</h3>
+                <p class="timeline-org">Social Security System (SSS)</p>
+                <ul class="experience-list">
+                    <li>Assisted Member Services Representatives (MSR) in screening, verifying, and processing core membership registration forms (E4 and Request Verification).</li>
+                    <li>Provided technical support, assisting with hardware configuration and troubleshooting system deployment issues.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- PROJECTS SECTION -->
+    <section id="projects" class="container">
+    <!-- HEADER ROW WITH DYNAMIC GITHUB BUTTON -->
+            <div class="projects-section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <a id="project-github-btn" 
+                href="https://github.com/Wanju17/FirstStep" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-github">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span id="github-btn-text">View Repository</span>
+                </a>
+            </div>
+
+        <div class="project-tabs-bar">
+            <button class="tab-btn active" data-tab="tab-courseconnect">First Step</button>
+            <button class="tab-btn" data-tab="tab-canteen">PCU Canteen</button>
+        </div>
+
+        <!-- TAB 1: CourseConnect Thesis -->
+        <div id="tab-courseconnect" class="tab-content active">
+            <div class="project-header">
+                <div class="tech-pills-2">
+                    <span>Python</span>
+                    <span>Laravel</span>
+                    <span>Machine Learning (Random Forest)</span>
+                    <span>Figma</span>
+                    <span>MySQL</span>
+                    <span>HTML5/CSS3/JS</span>
+                </div>
+            </div>
+
+            <!-- IMAGE CAROUSEL (INSIDE COURSECONNECT TAB) -->
+            <div class="project-carousel" id="courseconnect-carousel">
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="assets/Images/FirstStep-Dash.png" alt="CourseConnect Dashboard Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Entry.png" alt="CourseConnect Entry Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Interest.png" alt="CourseConnect Interests Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-SelfRating.png" alt="CourseConnect SelfRating Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-MiniTest.png" alt="CourseConnect MiniTest Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Exam.png" alt="CourseConnect Exam Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Exam2.png" alt="CourseConnect Exam2 Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Feedback.png" alt="CourseConnect Feedback Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-AReview.png" alt="CourseConnect AReveiw Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-HIstory.png" alt="CourseConnect HIstory Screen">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/Images/FirstStep-Result.png" alt="CourseConnect Result Screen">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button type="button" class="carousel-btn prev" aria-label="Previous Slide">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-btn next" aria-label="Next Slide">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Indicator Dots -->
+                <div class="carousel-dots"></div>
+            </div>
+
+            <!-- DETAIL BOX -->
+            <div class="project-detail-box">
+                <h3>First Step: Web-Based Course Recommender System</h3>
+                <p>
+                   An academic advising web application designed to eliminate student-to-track misalignment at PCU College of Informatics. By evaluating students' technical interests, self-perceived skills, and objective aptitude using the Random Forest algorithm, it delivers personalized, data-driven degree track recommendations complete with portable QR code and email verification for official campus advising.
+                </p>
+
+                <div class="authors-box">
+                    <span class="meta-label">AUTHORS</span>
+                    <div class="author-pills">
+                        <span>Dennies R. Chavez</span>
+                        <span class="author-me">Joaquin Eivan N. Martelino</span>
+                        <span>Mark Joseph G. Paule</span>
+                        <span>Justine Clint Cervantes</span>
+                    </div>
+                </div>
+
+                <div class="metadata-pills">
+                    <div class="meta-item">
+                        <span class="meta-label">Year / Duration</span>
+                        <p>August 2025 – May 2026</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Department</span>
+                        <p>College of Informatics — Computer Science</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Institution</span>
+                        <p>Philippine Christian University</p>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-title">ALGORITHM</span>
+                        <p class="metric-val text-blue">Random Forest</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">PRIMARY ROLE</span>
+                        <p class="metric-val text-purple">Frontend & UI Architecture</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">FOCUS</span>
+                        <p class="metric-val text-green">Career Guidance</p>
+                    </div>
+                </div>
+
+                <div class="how-it-works">
+                    <span class="step-label">HOW IT WORKS</span>
+                    <div class="steps-grid">
+                        <div class="step-box">
+                            <span class="step-num">01</span>
+                            <h4>Profile & Aptitude Assessment</h4>
+                            <p>Students complete an evaluation capturing their technical interests, self-perceived proficiencies, and objective aptitude metrics.</p>
+                        </div>
+                        <div class="step-box">
+                            <span class="step-num">02</span>
+                            <h4>Random Forest Classification</h4>
+                            <p>The system runs inputs through a trained Random Forest model to predict the most suitable academic programs and career tracks within PCU COI.</p>
+                        </div>
+                        <div class="step-box">
+                            <span class="step-num">03</span>
+                            <h4>Advising & Result Portability</h4>
+                            <p>Generates tailored guidance reports with integrated QR codes and automated email summaries for verification during formal university enrollment.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 2: PCU Canteen System -->
+        <div id="tab-canteen" class="tab-content">
+            <div class="project-header">
+                <h2>PCU Canteen: Pre-Order & Management System</h2>
+                <div class="tech-pills-2">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>HTML5/CSS3/JavaScript</span>
+                    <span>Firebase Firestore</span>
+                    <span>REST API</span>
+                </div>
+            </div>
+
+            <!-- REUSABLE CAROUSEL: PCU CANTEEN -->
+        <div class="project-carousel" id="canteen-carousel">
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                    <!-- Replace with your actual canteen screenshots when ready -->
+                    <div class="carousel-slide active">
+                        <img src="assets/Images/Login-1.jpg" alt="PCU Canteen Menu Browsing Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/Regis-2.jpg" alt="PCU Canteen Ordering & Cart Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/HomePage-3.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/Menupage-4.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/History-5.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/Dashboard-6.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/Kitstaff-7.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/Images/Admin-8.jpg" alt="PCU Canteen Order Pickup Queue Screen">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button type="button" class="carousel-btn prev" aria-label="Previous Slide">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button type="button" class="carousel-btn next" aria-label="Next Slide">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Dynamic Indicator Dots -->
+            <div class="carousel-dots"></div>
+        </div>
+
+
+            <div class="project-detail-box">
+                <h3>PCU Canteen Pre-Order & Management System</h3>
+                <p>
+                   Transforms campus dining into a queue-free, digital service by replacing traditional cash-and-carry bottlenecks. Students can browse live menu availability, customize meal choices, schedule timed pickups, earn loyalty rewards, and reorder from past history. Built with a responsive frontend and powered by Node.js/Express REST APIs, real-time Firebase Firestore database sync, and Cloudinary image management—backed by kitchen queue dashboards, sales analytics, and role-based administrative controls.
+                </p>
+
+                <div class="authors-box">
+                    <span class="meta-label">AUTHORS</span>
+                    <div class="author-pills">
+                        <span>Lee Russell B. Mejares</span>
+                        <span class="author-me">Joaquin Eivan N. Martelino</span>
+                        <span>Mark Joseph G. Paule</span>
+                    </div>
+                </div>
+                
+                <div class="metadata-pills">
+                    <div class="meta-item">
+                        <span class="meta-label">Year / Duration</span>
+                        <p>April 2026 – May 2026</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Department</span>
+                        <p>College of Informatics — Computer Science</p>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Client</span>
+                        <p>Philippine Christian University</p>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-title">DATABASE</span>
+                        <p class="metric-val text-blue">Firebase Firestore</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">BACKEND</span>
+                        <p class="metric-val text-purple">Node.js / Express</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">ARCHITECTURE</span>
+                        <p class="metric-val text-green">REST API</p>
+                    </div>
+                </div>
+
+                <div class="how-it-works">
+                    <span class="step-label">HOW IT WORKS</span>
+                    <div class="steps-grid">
+                        <div class="step-box">
+                            <span class="step-num">01</span>
+                            <h4>Student Pre-Ordering & Rewards</h4>
+                            <p>Students register using their university email, browse real-time menus with promo banners, customize items with add-ons, select a scheduled pickup time, and earn loyalty points upon checkout.</p>
+                        </div>
+                        <div class="step-box">
+                            <span class="step-num">02</span>
+                            <h4>Live Firestore & Queue Sync</h4>
+                            <p>Incoming orders immediately deduct ingredient inventory via Firebase Firestore. Kitchen staff receive the order on a live preparation queue dashboard and mark items "Ready for Pickup."</p>
+                        </div>
+                        <div class="step-box">
+                            <span class="step-num">03</span>
+                            <h4>Fulfillment, Analytics & Administration</h4>
+                            <p>Students collect meals at designated times. Staff manage products and image assets with Cloudinary, track peak-hour and revenue analytics, while Super Admins manage role access permissions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="container">
+        <h2 class="section-title">Skills & Competencies</h2>
+        <div class="skills-two-column">
+            
+            <!-- LEFT CONTAINER: Technical Skills -->
+            <div class="skills-card tech-card">
+                <div class="card-glow-line glow-blue"></div>
+                <h3>Technical Skills</h3>
+                
+                <div class="skill-row">
+                    <img src="assets/Icons/laptop.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">LANGUAGES</span>
+                        <p class="skill-list">JavaScript, Java, PHP, Python, HTML5, CSS3, SQL</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/target.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">FRAMEWORKS & LIBRARIES</span>
+                        <p class="skill-list">Flask, Node.js, Express, Laravel</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/cloud.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">DATABASES & CLOUD</span>
+                        <p class="skill-list">Firebase Firestore, MySQL</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/Bot.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">MACHINE LEARNING & ARCHITECTURE</span>
+                        <p class="skill-list">Random Forest Algorithm, RESTful APIs</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/hammer.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">TOOLS & WORKFLOW</span>
+                        <p class="skill-list">Git, GitHub, Figma, VS Code, XAMPP, Basic Hardware Troubleshooting, CLI, Opencode</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTAINER: Soft Skills -->
+            <div class="skills-card soft-card">
+                <div class="card-glow-line glow-purple"></div>
+                <h3>Soft Skills</h3>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/handshake.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">TEAMWORK & COLLABORATION</span>
+                        <p class="skill-list">Collaborative mindset with strong communication skills</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/Graph.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">ADAPTABILITY</span>
+                        <p class="skill-list">Adaptive and quick to learn new stacks and workflows</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/puzzle.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">FLEXIBILITY</span>
+                        <p class="skill-list">Flexible under changing project technical requirements</p>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <img src="assets/Icons/zap.svg" alt="" aria-hidden="true" class="svg-icon">
+                    <div class="skill-info">
+                        <span class="skill-category">PROBLEM-SOLVING</span>
+                        <p class="skill-list">Analytical approach to software logic and system debugging</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DM MODAL POPUP -->
+    <div id="dm-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-dm-btn">&times;</span>
+            <h2>Send Me a Direct Message</h2>
+            <form id="dm-form">
+                <div class="form-group">
+                    <input type="text" id="sender-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="sender-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="sender-message" rows="4" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" id="send-btn" class="btn btn-primary">Send Message</button>
+            </form>
+            <p id="form-status" class="form-status"></p>
+        </div>
+    </div>
+
+    <div id="image-lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" alt="Enlarged Project Preview">
+    </div>
+
+    <!-- FOOTER WITH ADMIN LINK -->
+<footer class="footer">
+    <p>© 2026 Joaquin Eivan N. Martelino. Built with Python, Flask, & Firebase.</p>
+    <a href="admin.html" class="admin-link">
+        <img src="assets/Icons/settings.svg" alt="" aria-hidden="true" class="svg-icon">
+        <span>Admin Portal</span>
+    </a>
+</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

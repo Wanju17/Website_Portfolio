@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="toast-container" class="toast-container"></div>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+         <a href="index.html" class="logo">&lt;Eivan / Admin&gt;</a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <img id="theme-icon" src="assets/Icons/sun.svg" alt="Toggle theme" class="svg-icon">
+            </button>
+            <a href="index.html" class="btn btn-outline">Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <!-- LOGIN FORM -->
+    <div id="login-section" class="login-box">
+        <h2>Admin Login</h2>
+        <p class="admin-subtitle">Access message inbox and project controls</p>
+        
+        <form id="admin-login-form">
+            <div class="form-group">
+                <input 
+                    type="email" 
+                    id="admin-email" 
+                    class="admin-input" 
+                    placeholder="Admin Email" 
+                    autocomplete="off" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <div class="password-wrapper">
+                    <input 
+                        type="password" 
+                        id="admin-password" 
+                        class="admin-input" 
+                        placeholder="Password" 
+                        autocomplete="new-password" 
+                        required
+                    >
+                    <button type="button" id="toggle-password-btn" class="toggle-password" aria-label="Toggle password visibility">
+                        <img src="assets/Icons/eye.svg" id="eye-icon" alt="Show password" class="svg-icon">
+                        <img src="assets/Icons/eye-closed.svg" id="eye-off-icon" alt="Hide password" class="svg-icon" style="display: none;">
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Log In</button>
+        </form>
+        <p id="login-error" class="login-error-text"></p>
+    </div>
+
+        <!-- PROTECTED DASHBOARD CONTENT -->
+        <div id="dashboard-section" class="admin-section">
+            <div class="dashboard-header">
+                <div class="dashboard-user-greeting">
+                    <h2>Welcome, Admin</h2>
+                    <img src="assets/Icons/hand.svg" alt="" aria-hidden="true" class="svg-icon greeting-icon">
+                </div>
+                <button id="logout-btn" class="btn btn-outline">Log Out</button>
+            </div>
+
+            <!-- MESSAGES INBOX -->
+            <div class="dashboard-card">
+                <h2 class="dashboard-title">
+                    <img src="assets/Icons/send.svg" alt="" aria-hidden="true" class="svg-icon">
+                    Incoming Direct Messages
+                </h2> 
+                <div id="messages-inbox" style="margin-top: 1rem;">
+                    <p class="loading-text">Loading messages...</p>
+                </div>
+            </div>
+
+            <!-- CREATE NEW PROJECT FORM -->
+            <div class="dashboard-card">
+                <h2 class="dashboard-title">
+                    <img src="assets/Icons/plus.svg" alt="" aria-hidden="true" class="svg-icon">
+                    Add New Portfolio Project
+                </h2>
+                <form id="add-project-form" style="margin-top: 1rem;">
+                    <input type="text" id="project-title" class="admin-input" placeholder="Project Title" required>
+                    <input type="text" id="project-tech" class="admin-input" placeholder="Tech Stack (e.g. Python, Flask, Firebase)" required>
+                    <textarea id="project-desc" class="admin-textarea" placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-primary">Publish Project</button>
+                </form>
+                <p id="project-status" class="project-status-text"></p>
+            </div>
+
+            <!-- EXISTING PROJECTS MANAGEMENT -->
+            <section style="margin-top: 2rem;">
+                <h2 class="dashboard-title" style="margin-bottom: 1rem;">Manage Existing Projects</h2>
+                <div id="admin-projects-list" style="display: grid; gap: 1rem; margin-top: 1rem;">
+                    <!-- Dynamic project cards load here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

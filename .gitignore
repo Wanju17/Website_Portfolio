@@ -1,0 +1,17 @@
+# Environment variables and service credentials
+.env
+*.env
+serviceAccountKey.json
+Backend/serviceAccountKey.json
+Backend/.env
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+
+# VS Code settings
+.vscode/
