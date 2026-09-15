@@ -106,7 +106,7 @@ body {
     outline: none;
 }
 
-/* Inherits your theme filter */
+/* Inherit theme filter */
 .toggle-password .svg-icon {
     width: 18px;
     height: 18px;

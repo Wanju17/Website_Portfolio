@@ -1,5 +1,5 @@
 
-// Your Firebase Web Configuration
+// Firebase Web Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCEtw_2bYuuspxhTynf7mhR0D-ASjg514s",
     authDomain: "portfolio-2-4f08b.firebaseapp.com",

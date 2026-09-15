@@ -37,16 +37,16 @@ img, svg {
 }
 
 [data-theme="light"] {
-    --bg-main: #f8fafc;
+    --bg-main: #e9edf2;
     --bg-card: rgba(2, 132, 199, 0.1);
-    --bg-card-hover: #f1f5f9;
+    --bg-card-hover: #e2e8f0;
     --bg-inner: #77b2ec;
-    --border-color: #e2e8f0;
+    --border-color: #cbd5e1;
     --border-card: #cbd5e1;
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-muted: #64748b;
-    --navbar-bg: rgba(255, 255, 255, 0.92);
+    --navbar-bg: rgba(233, 237, 242, 0.85);
     --badge-bg: rgba(2, 132, 199, 0.1);
     --badge-border: rgba(2, 132, 199, 0.25);
     --badge-text: #0284c7;
@@ -292,12 +292,29 @@ body {
 }
 
 .hero-title {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    overflow-wrap: break-word;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px; 
+  min-height: 110px;
+}
+
+.highlight-text {
+  color: var(--badge-text); 
+}
+
+.typing-cursor {
+  display: inline-block;
+  color: var(--badge-text);
+  font-weight: 300;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .highlight-blue { color: #38bdf8; }

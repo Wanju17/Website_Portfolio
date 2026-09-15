@@ -1,5 +1,59 @@
 const API_BASE_URL = 'http://127.0.0.1:5000/api';
 
+// Typing writer
+
+const words = [
+  "Scalable Web Apps",
+  "Smart Solutions",
+  "Modern Interfaces"
+];
+
+const textElement = document.getElementById("typewriter-text");
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingSpeed = 100;     // Speed while typing a character (ms)
+const deletingSpeed = 50;    // Speed while deleting a character (ms)
+const pauseEnd = 2500;       // Delay when the full word is typed (ms)
+const pauseStart = 400;      // Delay before typing the next word (ms)
+
+function typeLoop() {
+  const currentWord = words[wordIndex];
+
+  if (!isDeleting) {
+    // Typing forward
+    textElement.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeLoop, pauseEnd);
+      return;
+    }
+    setTimeout(typeLoop, typingSpeed);
+  } else {
+    // Deleting backward
+    textElement.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      // Move to next word in a circle
+      wordIndex = (wordIndex + 1) % words.length; 
+      setTimeout(typeLoop, pauseStart);
+      return;
+    }
+    setTimeout(typeLoop, deletingSpeed);
+  }
+}
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", typeLoop);
+
+
+
 // ==========================================
 // 1. THEME & MODAL CONTROLS
 // ==========================================
