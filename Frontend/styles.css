@@ -1426,15 +1426,39 @@ body {
 
     /* Container fluid spacing */
     .overview-section {
-        padding: 6.5rem 4% 3rem 4%;
+        padding: 7.5rem 4% 2rem 4%;
+    }
+
+    .overview-grid {
+        gap: 1.25rem;
     }
 
     .container {
         padding: 3rem 4%;
     }
 
+    .hero-photo-col {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-photo-wrapper {
+        max-width: 240px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
     .hero-title {
-        font-size: 2.1rem;
+        font-size: 1.85rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .badge {
+        display: table;
+        margin: 0 auto 0.75rem auto;
     }
 
     .hero-subtitle {
@@ -1500,6 +1524,15 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.8rem;
+    }
+
+    .hero-photo-wrapper {
+        max-width: 210px;
+        height: 265px;
+    }
+
+    .hero-title {
+        font-size: 1.65rem;
     }
 
     .hero-photo-wrapper {
